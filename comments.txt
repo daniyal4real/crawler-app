@@ -1,0 +1,29 @@
+pip3 install uvicorn fastapi
+
+
+python3 -m uvicorn app:app --reload
+
+
+pip3 install sqlalchemy
+
+
+
+pip3 install psycopg2
+
+
+pip3 install crud
+
+
+create table news(
+id serial,
+title varchar(255),
+description TEXT,
+PRIMARY KEY(id)
+);
+
+
+insert into news(id, title, description)
+values(1, 'Hello World', 'Here is description');
+
+
+select * from news;
